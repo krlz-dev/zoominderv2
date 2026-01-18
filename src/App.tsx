@@ -12,9 +12,9 @@ import {
 import { IonReactRouter } from '@ionic/react-router';
 import { paw, medkit, person } from 'ionicons/icons';
 
-import Pets from './pages/Pets';
-import Treatments from './pages/Treatments';
-import Profile from './pages/Profile';
+import Pets from './pages/Pets/Pets';
+import Treatments from './pages/Treatments/Treatments';
+import Profile from './pages/Profile/Profile';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
