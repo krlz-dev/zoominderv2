@@ -10,10 +10,10 @@ import {
   setupIonicReact,
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { home, compass, person } from 'ionicons/icons';
+import { paw, medkit, person } from 'ionicons/icons';
 
-import Home from './pages/Home';
-import Explore from './pages/Explore';
+import Pets from './pages/Pets';
+import Treatments from './pages/Treatments';
 import Profile from './pages/Profile';
 
 /* Core CSS required for Ionic components to work properly */
@@ -45,27 +45,27 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route exact path="/home">
-            <Home />
+          <Route exact path="/pets">
+            <Pets />
           </Route>
-          <Route exact path="/explore">
-            <Explore />
+          <Route exact path="/treatments">
+            <Treatments />
           </Route>
           <Route exact path="/profile">
             <Profile />
           </Route>
           <Route exact path="/">
-            <Redirect to="/home" />
+            <Redirect to="/pets" />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="home" href="/home">
-            <IonIcon icon={home} />
-            <IonLabel>Home</IonLabel>
+          <IonTabButton tab="pets" href="/pets">
+            <IonIcon icon={paw} />
+            <IonLabel>Pets</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="explore" href="/explore">
-            <IonIcon icon={compass} />
-            <IonLabel>Explore</IonLabel>
+          <IonTabButton tab="treatments" href="/treatments">
+            <IonIcon icon={medkit} />
+            <IonLabel>Treatments</IonLabel>
           </IonTabButton>
           <IonTabButton tab="profile" href="/profile">
             <IonIcon icon={person} />

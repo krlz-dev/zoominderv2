@@ -1,0 +1,51 @@
+.pets-container {
+  padding: 16px;
+}
+
+.pet-card {
+  background: var(--ion-color-light);
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.pet-name {
+  color: var(--ion-color-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.pet-info-item {
+  --background: transparent;
+  --padding-start: 0;
+  margin-bottom: 8px;
+}
+
+.pet-info-item .info-label {
+  font-size: 0.75rem;
+  color: var(--ion-color-medium);
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pet-info-item h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  color: var(--ion-text-color);
+}
+
+.pet-info-item .med-time {
+  font-size: 0.875rem;
+  color: var(--ion-color-medium);
+  margin-top: 2px;
+}
+
+.next-med h3 {
+  color: var(--ion-color-success);
+}
+
+ion-fab-button {
+  --background: var(--ion-color-primary);
+  --background-activated: var(--ion-color-primary-shade);
+}
